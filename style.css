@@ -44,6 +44,7 @@ input, button, textarea, select {
 */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+  
 }
 
 :root{
@@ -54,19 +55,58 @@ p, h1, h2, h3, h4, h5, h6 {
 --white: hsl(0, 0%, 100%);
 --ff-base: 'League Spartan', sans-serif;
 }
-
+.star_rating{
+    background-color: var(--light-grayish-magenta);  
+    
+}
 .five_stars{
     display: flex;
-    gap:2px;    
+    gap:2px; 
+    
 }
 
 body{
     background-image: url(/images/bg-pattern-top-desktop.svg),url(/images/bg-pattern-bottom-desktop.svg);
     background-position: left top, right bottom;
     background-repeat: no-repeat;
-    
+    width: 90%;
+    margin: 0 auto;
+    font-family: var(--ff-base);
 }
 
 h1, h2{
     color:var(--very-dark-magenta);
+    font-weight: 700;
+    
+}
+
+h1{
+    font-size: 3rem;
+    line-height: .9;
+    text-align: center;
+}
+.profile_image {
+    border-radius: 50%;
+    height: 70%;
+}
+
+.customer{
+    display: flex;
+}
+
+.card{
+    background-color: var(--very-dark-magenta);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.card + .card{
+    margin-top: 1rem;
+}
+
+.customer_review, .customer_name {
+    color: var(--light-grayish-magenta);
+}
+.verification{
+    color: var(--soft-pink);
 }
