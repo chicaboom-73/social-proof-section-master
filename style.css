@@ -57,12 +57,17 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .star_rating{
     background-color: var(--light-grayish-magenta);  
+    margin: 1rem 0;
+    border-radius: 8px;
+    padding: 0.8rem 0;
+    text-align: center;
     
 }
 .five_stars{
     display: flex;
-    gap:2px; 
-    
+    gap: 0.5rem; 
+    justify-content: center;   
+    padding-bottom: 1rem;
 }
 
 body{
@@ -74,7 +79,7 @@ body{
     font-family: var(--ff-base);
 }
 
-h1, h2{
+h1, h3{
     color:var(--very-dark-magenta);
     font-weight: 700;
     
@@ -84,29 +89,45 @@ h1{
     font-size: 3rem;
     line-height: .9;
     text-align: center;
+    padding-bottom: 1rem;
 }
 .profile_image {
     border-radius: 50%;
-    height: 70%;
+    width: 40px;
+    height: 40px;
+    
 }
-
+.customer_cards, .customer_ratings{
+    padding-top:1rem;
+}
 .customer{
     display: flex;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1.5rem;
+   
+}
+
+.customer_details{
+    padding-left: 1rem;
+    margin: auto 0;
 }
 
 .card{
     background-color: var(--very-dark-magenta);
     border-radius: 8px;
     padding: 2rem;
+    margin: 1rem 0;
 }
 
-.card + .card{
-    margin-top: 1rem;
-}
 
 .customer_review, .customer_name {
     color: var(--light-grayish-magenta);
 }
 .verification{
     color: var(--soft-pink);
+    font-weight: 400;
+}
+h3{
+    line-height: 1;
 }
